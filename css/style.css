@@ -245,6 +245,7 @@ p a:hover {
 
 nav #logo {
     float: left;
+    margin-top: -10px;
     z-index: 99999;
 }
 
@@ -366,8 +367,9 @@ nav {
 
 
 .cbp-af-header.cbp-af-header-shrink {
-	height: 80px;
+	height: 100px;
 	float: right;
+
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
     -ms-transition: all 0.2s ease-in-out;
