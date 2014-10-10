@@ -105,7 +105,8 @@
       margin-right: 2.35765%;
       width: 48.82117%; }
       .nav--primary:last-child {
-        margin-right: 0; }
+        margin-right: 0;
+	display:none; }
       .nav--primary ul {
         text-align: right;
         margin: 1em 0 0.8em 0; }
@@ -346,7 +347,7 @@
   height: 100%;
   display: table;
   clear: both;
-  background: #000 url("../../../assets/static/BG_loop_still2.jpg");
+  background: #000 url("../../../assets/static/BG_loop_still1.jpg");
   background-attachment: fixed;
   background-size: cover;
   background-position: bottom center; }
