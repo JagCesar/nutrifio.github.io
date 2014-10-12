@@ -108,6 +108,7 @@
         margin-right: 0; }
       .nav--primary ul {
         text-align: right;
+	display: none;
         margin: 1em 0 0.8em 0; }
         .nav--primary ul li {
           margin: 0 0.2em;
