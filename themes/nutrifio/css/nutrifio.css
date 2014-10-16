@@ -504,7 +504,11 @@ body.wallet .hero {
   padding: 6em 0; }
   #secure-pin p {
     font-size: 1.125rem;
-    line-height: 1.8125rem; }
+    line-height: 1.8125rem;
+    margin-bottom: 5rem; }
+#secure-pin img {
+    margin: -4.0rem 0 0 0;
+}
 
 #remote-security {
   border-top: 1px solid #f2f2f2;
