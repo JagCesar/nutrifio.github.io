@@ -26,7 +26,9 @@
 
 @font-face {
     font-family: "Source Sans Pro";
-    src: local("Source Sans Pro ExtraLight"), local("SourceSansPro-ExtraLight"), url('themes/nutrifio/fonts/sourcesanspro-extralight-webfont.eot');
+    font-style: normal;
+    font-weight: 200;
+    src: url('themes/nutrifio/fonts/sourcesanspro-extralight-webfont.eot');
     src: url('themes/nutrifio/fonts/sourcesanspro-extralight-webfont.eot?#iefix') format('embedded-opentype'),
          url('themes/nutrifio/fonts/sourcesanspro-extralight-webfont.woff2') format('woff2'),
          url('themes/nutrifio/fonts/sourcesanspro-extralight-webfont.woff') format('woff'),
