@@ -27,7 +27,7 @@
 @font-face {
     font-family: "Source Sans Pro";
     font-style: normal;
-    font-weight: normal;
+    font-weight: 200;
     src: local("Source Sans Pro ExtraLight"), local("SourceSansPro-ExtraLight"), url('//nutrif.io/themes/nutrifio/fonts/sourcesanspro-extralight-webfont.eot');
     src: url('//nutrif.io/themes/nutrifio/fonts/sourcesanspro-extralight-webfont.eot?#iefix') format('embedded-opentype'),
          url('//nutrif.io/themes/nutrifio/fonts/sourcesanspro-extralight-webfont.woff2') format('woff2'),
@@ -40,7 +40,12 @@
     font-family: "Source Sans Pro";
     font-style: normal;
     font-weight: 400;
-    src: local("Source Sans Pro"), local("SourceSansPro-Regular"), url("http://themes.googleusercontent.com/static/fonts/sourcesanspro/v7/ODelI1aHBYDBqgeIAH2zlDLXPPWpYIJRcQ99gLLWTOQ.svg") format("svg"), url("http://themes.googleusercontent.com/static/fonts/sourcesanspro/v7/ODelI1aHBYDBqgeIAH2zlDLXPPWpYIJRcQ99gLLWTOQ.woff") format("woff");
+    src: local("Source Sans Pro"), local("SourceSansPro-Regular"), url('//nutrif.io/themes/nutrifio/fonts/sourcesanspro-regular-webfont.eot');
+    src: url('//nutrif.io/themes/nutrifio/fonts/sourcesanspro-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('//nutrif.io/themes/nutrifio/fonts/sourcesanspro-regular-webfont.woff2') format('woff2'),
+         url('//nutrif.io/themes/nutrifio/fonts/sourcesanspro-regular-webfont.woff') format('woff'),
+         url('//nutrif.io/themes/nutrifio/fonts/sourcesanspro-regular-webfont.ttf') format('truetype'),
+         url('//nutrif.io/themes/nutrifio/fonts/sourcesanspro-regular-webfont.svg#source_sans_proregular') format('svg');
 }
 
 @font-face {
@@ -54,7 +59,12 @@
     font-family: "Source Sans Pro";
     font-style: normal;
     font-weight: 700;
-    src: local("Source Sans Pro Bold"), local("SourceSansPro-Bold"), url("http://themes.googleusercontent.com/static/fonts/sourcesanspro/v7/toadOcfmlt9b38dHJxOBGBgDywzySrQSFSEUM6OqW_g.svg") format("svg"), url("http://themes.googleusercontent.com/static/fonts/sourcesanspro/v7/toadOcfmlt9b38dHJxOBGBgDywzySrQSFSEUM6OqW_g.woff") format("woff");
+    src: local("Source Sans Pro Bold"), local("SourceSansPro-Bold"), url('//nutrif.io/themes/nutrifio/fonts/sourcesanspro-bold-webfont.eot');
+    src: url('//nutrif.io/themes/nutrifio/fonts/sourcesanspro-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('//nutrif.io/themes/nutrifio/fonts/sourcesanspro-bold-webfont.woff2') format('woff2'),
+         url('//nutrif.io/themes/nutrifio/fonts/sourcesanspro-bold-webfont.woff') format('woff'),
+         url('//nutrif.io/themes/nutrifio/fonts/sourcesanspro-bold-webfont.ttf') format('truetype'),
+         url('//nutrif.io/themes/nutrifio/fonts/sourcesanspro-bold-webfont.svg#source_sans_probold') format('svg');
 }
 
 @-webkit-keyframes slideUp {
