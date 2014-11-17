@@ -416,7 +416,7 @@
 
 body.app .hero {
   height: 90%;
-  background: #000 url("../../../assets/static/Hero_coffee.jpg");
+  background: #000 url("../../../assets/static/hero_coffee_coke.jpg");
   background-attachment: fixed;
   background-size: cover; }
   @media all and (min-width: 46.25em) {
