@@ -488,9 +488,7 @@ body.wallet .hero {
   @media all and (max-width: 46.24em) {
     #everything-on-nutrifio {
       padding: 2em 0;
-      text-align: center; } 
-  img { display: none;}
-}
+      text-align: center; } }
 
 #accepted-everywhere {
   padding: 3em 0 6em 0;
@@ -499,7 +497,7 @@ body.wallet .hero {
     #accepted-everywhere {
       padding: 2em 0;
       text-align: center; } 
-  img { display: none;}
+  img { width: 60%; max-width: 40em;}
 }
 
 .pullin {
