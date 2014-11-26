@@ -484,19 +484,23 @@ body.wallet .hero {
 
 #everything-on-nutrifio {
   padding: 3em 0 3em 0;
-  background: white url("https://www.plastc.com/_themes/plastc/img/") no-repeat bottom center; }
+  background: white no-repeat bottom center; }
   @media all and (max-width: 46.24em) {
     #everything-on-nutrifio {
       padding: 2em 0;
-      text-align: center; } }
+      text-align: center; } 
+  img { display: none;}
+}
 
 #accepted-everywhere {
   padding: 3em 0 6em 0;
-  background: white url("https://www.plastc.com/_themes/plastc/img/") no-repeat bottom center; }
+  background: white no-repeat bottom center; }
   @media all and (max-width: 46.24em) {
     #accepted-everywhere {
       padding: 2em 0;
-      text-align: center; } }
+      text-align: center; } 
+  img { display: none;}
+}
 
 .pullin {
   padding: 0 6em; }
@@ -541,7 +545,7 @@ body.wallet .hero {
 #charge {
   border: 0;
   padding: 2em 0 24em 0;
-  background: url("../../../assets/static/ready_for_tomorrow_placeholder.jpg") no-repeat;
+  background: url("../../../assets/static/lemonade.jpg") no-repeat;
   background-size: cover;
   background-position: center bottom;
   color: white; }
