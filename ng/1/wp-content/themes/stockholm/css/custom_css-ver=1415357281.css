@@ -1,0 +1,8 @@
+
+
+body.home footer{display: none;}
+
+.woocommerce .select2-container.orderby .select2-choice, .woocommerce-page .select2-container.orderby .select2-choice {background-color: #f5f5f5;}
+
+@media only screen and (max-width: 600px){.full_screen_inner {-ms-touch-action: inherit;touch-action: inherit;}}
+
