@@ -6326,10 +6326,12 @@ section {
 
 @media (max-width: 1600px) {
   #hoteza_solutions {
-    background: url("../images/hoteza_bg.jpg") no-repeat center top; }
+    background: url("../images/hoteza_bg.jpg") no-repeat center top;
+    background-size: cover; }
 
   #hoteza_tv {
-    background: url("../images/hoteza_tv_bg.jpg") no-repeat center bottom; } }
+    background: url("../images/hoteza_tv_bg.jpg") no-repeat center bottom;
+    background-size: cover; } }
 @media (max-width: 1440px) {
   #incamp h2 {
     font-size: 50px; }
