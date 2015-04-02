@@ -1,102 +1,221 @@
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9"><![endif]-->
-<!--[if gt IE 8]><!--><html class="no-js"><!--<![endif]-->
-<head>
-<meta charset="utf-8">
-<title>Nutrif.io | count calories and track your diet, securely stored in health kit</title>
-<meta name="description" content="Nutrif.io helps you keep track of your daily calories intake by giving you the fastest tool to scan, add and repeat this everytime you grab something to eat or drink.">
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="apple-itunes-app" content="app-id=924999887"/>
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui"/>
- 
-<meta property="og:title" content="Nutrif.io - Keep track of your dietary calories"/>
-<meta property="og:type" content="website"/>
-<meta property="og:image" content="https://nutrif.io/assets/static/og_lemonade.jpg"/>
-<meta property="og:description" content="Nutrif.io helps you keep track of your daily calories intake by giving you the fastest tool to scan, add and repeat this everytime you grab something to eat or drink."/>
-<meta property="og:url" content="https://nutrif.io"/>
+        <meta name="viewport" content="initial-scale=1">
 
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Nutrif.io - Keep track of your dietary calories"/>
-<meta name="twitter:description" content="Nutrif.io helps you keep track of your daily calories intake by giving you the fastest tool to scan, add and repeat this everytime you grab something to eat or drink.."/>
-<meta name="twitter:image" content="https://nutrif.io/assets/static/og_lemonade.jpg"/>
+        <title>Nutrif.IO | Counting your calories</title>
+        <link href="assets/css/styles.css" rel="stylesheet" />
+        
+        <script src="assets/js/jquery/jquery-2.1.1.js"></script>
+        <script src="assets/js/appear/jquery.appear.js"></script>
+        <script src="assets/js/midnight/jquery.midnight-1.0.3.js"></script>
+    </head>
+    <body>
+        <nav id="main_nav" class="fixed">
+        <div class="container clearfix">
+            <p class="contact pull-left" style="color: #dedede;">Nutrif.IO</p>
+            <p class="contact pull-right" style="color: white;"><span class="hidden-xs">Counting your calories</span></p>
+        </div>
+    </nav>
 
-<link rel="stylesheet" href="themes/nutrifio/bower_components/normalize-css/normalize.css">
-<!--[if gte IE 8]><!-->
-<link rel="stylesheet" href="themes/nutrifio/css/nutrifio.css">
-<!--<![endif]-->
- 
-<link rel="alternate" type="application/rss+xml" href="feed.rss" title="nutrifio RSS Feed">
- 
-<script src="themes/nutrifio/bower_components/jquery/dist/jquery.min.js"></script>
-<script src="themes/nutrifio/bower_components/modernizr/modernizr.js"></script>
-<script src="themes/nutrifio/bower_components/fitvids/jquery.fitvids.js"></script>
-<script src="themes/nutrifio/bower_components/waypoints/waypoints.min.js"></script>
-<script src="themes/nutrifio/js/min/jquery.xdomainrequest.min.js"></script>
-<script src="themes/nutrifio/js/min/placeholdr.min.js"></script>
-<script src="themes/nutrifio/js/min/jquery.splendid.textchange.js"></script>
-<!--[if IE 8]>
-<script src="/themes/nutrifio/js/libs/DOMAssistantCompressed-2.8.1.js"></script>
-<script src="/themes/nutrifio/bower_components/selectivizr/selectivizr.js"></script>
-<![endif]-->
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-56294002-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
-<!-- start Mixpanel --><script type="text/javascript">(function(f,b){if(!b.__SV){var a,e,i,g;window.mixpanel=b;b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");
-for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,e,d])};b.__SV=1.2;a=f.createElement("script");a.type="text/javascript";a.async=!0;a.src="//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";e=f.getElementsByTagName("script")[0];e.parentNode.insertBefore(a,e)}})(document,window.mixpanel||[]);
-mixpanel.init("43c513a78956152595c067b56225386b");</script><!-- end Mixpanel -->
-</head>
-<body class="site home">
-<header id="header" role="banner" class="site__header">
-<div class="constrain">
-<div class="brand">
-<a href="//nutrif.io" class="site-logo"></a>
-</div>
-</div> 
-</header>
-<section class="hero">
-<div class="vertical" id="before-video-loop">
-<div class="hero-content">
-<div class="constrain">
-<div class="content" style="text-shadow: 1px 1px 4px rgba(20, 20, 20, 1);">
-<h1>Counting calories.</br>The way it should be.</h1>
-<a href="https://itunes.apple.com/us/app/nutrif.io/id924999887?mt=8" class="btn">Download Now</a>
-</div>
-</div>
-</div>
-</div>
+<section id="hoteza_solutions" data-midnight="white">
+    <div class="container" style="text-shadow: 1px 1px 4px rgba(20, 20, 20, 1);">
+        <div class="row">
+            <div class="col-sm-6 col-md-7 col-lg-5 project-info left">
+                <h2 class="project-name hidden-xs">Counting calories the way it should be</h2>
+                <h2 class="project-name visible-xs">Counting calories<br />the way it should be</h2>
+                <p class="description hidden-xs hidden-768"><u>Nutrif.IO</u> — The first app that really gets your<br /> Health App going. A remarkable fast and easy<br />way to keep track of your daily calorie intake.</p>
+                <p class="description visible-768"><u>Nutrif.IO</u> — The first app that really gets your<br /> Health App going. A remarkable fast and easy<br />way to keep track of your daily calorie intake.</p> 
+                <div class="buttons-container" style="text-shadow: 0px 0px 2px rgba(50, 50, 50, 1);">
+                    <a target="_blank" rel="nofollow" href="https://itunes.apple.com/us/app/nutrif.io/id924999887?mt=8" class="btn btn-white">Download Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
-<footer role="contentinfo" class="site__footer">
-<div class="constrain">
-<div class="copyright">
-<small>&copy; 2014 <a href="//nutrif.io">Nutrif.IO.</a> All rights reserved.</small>
-</div>
-<div class="footer-links">
-<nav role="navigation" class="nav--secondary">
-<ul class="nav__list nav__list--secondary">
-<li class="nav__listItem"><a href="http://www.facebook.com/NutrifIO" target="_blank"><img src="assets/social/facebook-icon-with-circle.png" style="width:18px; height:18px; padding: 0px; margin:0px;"></a></li>
-<li class="nav__listItem"><a href="//www.twitter.com/NutrifIO" target="_blank"><img src="assets/social/twitter-icon-with-circle.png" style="width:18px; height:18px; padding: 0px; margin:0px;"></a></li>
-<li class="nav__listItem">
-<a href="privacy">Privacy Policy</a>
-</li>
-</ul>
-</nav>
-</div>
-</div> 
-<div class="constrain">
-<p class="legal-sm">
- Nutrif.IO., this website and the app Nutrif.IO™ are all products and/or trademarks of Mobilitas Sweden AB. All product and company names that might be viewable on this webpage and its promotional material are trademarks™ or registered® trademarks of their respective holders. Use of them does not imply any affiliation with or endorsement by them. All specifications are subject to change without notice.DISCLAIMER: Nutrif.IO takes no responsibility on the correctness of data and dietary calories provided by third parts e g local providers of nutrition databases and API's.
-</p>
-<p class="legal-sm"><a href="https://mixpanel.com/f/partner"><img src="//cdn.mxpnl.com/site_media/images/partner/badge_light.png" alt="Mobile Analytics"></a></p>
-</div>
-</footer>
-<!--[if gte IE 8]><!-->
-<script src="themes/nutrifio/js/nutrifio.js"></script>
-<!--<![endif]-->
-</body>
+
+<section id="spb_tv" data-midnight="dark">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 col-lg-7 hero-container">
+                <div class="project-hero hidden-xs"></div>
+                <img class="visible-xs img-responsive" src="assets/images/spb_tv_hero_sm.png" />
+            </div>
+            <div class="col-sm-6 col-lg-5 project-info right">
+                <h2 class="project-name hidden-medium">scan, eat<br />& repeat</h2>
+                <h2 class="project-name visible-medium">scan, eat<br />& repeat</h2>
+                <p class="description hidden-xs">Fire up the app and you are all set to scan. Point<br /> your phone towards any* nutrition related barcode<br /> and BOOM there you go. <u>It's all done in a sec.</u><br />Calories, brand and a quick description. Adjust<br />the amount by drag your finger horizontally.</p>
+                <div class="buttons-container">
+                    <a target="_blank" rel="nofollow" href="https://itunes.apple.com/us/app/nutrif.io/id924999887?mt=8" class="btn btn-black">download now</a>
+                </div>
+		<p style="font-size:8pt;"><br />*Currently supports over 250.000 US Standard UPC barcodes.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="aeroplan" data-midnight="white">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 col-md-5 project-info left mobile-right">
+                <h2 class="project-name hidden-md hidden-sm visible-768 visible-xs">search<br />whatever,<br />whenever</h2>
+                <h2 class="project-name visible-md visible-xs visible-lg">search<br />whatever,<br />whenever</h2>
+                <h2 class="project-name hidden-md visible-sm hidden-768">search<br />whatever,<br />whenever</h2>
+                <p class="description hidden-xs hidden-768">We are aware that not everything you eat<br />actually contains a barcode, therefore we added<br />the industries most <u>intuitive</u> food search* feature.</p>
+                <p class="description visible-768">We are aware that not everything you eat<br />actually contains a barcode, therefore we added<br />the industries most <u>intuitive</u> food search feature.</p>
+                <div class="buttons-container">
+                    <a target="_blank" rel="nofollow" href="https://itunes.apple.com/us/app/nutrif.io/id924999887?mt=8" class="btn btn-white">Download now</a>
+                </div>
+		<p style="font-size:8pt;"><br />*Search over 130.000 US restaurants menu items & more than 8000 USDA National Nutrient Database food items.</p>
+            </div>
+            <div class="col-sm-6 col-md-7 hero-container">
+                <div class="background"></div>
+                <div class="layer-1"></div>
+                <div class="layer-2"></div>
+                <div class="layer-3"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="phonesoap" data-midnight="dark">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 col-lg-7 hero-container hidden-xs">
+                <div class="project-hero"></div>
+            </div>
+            <div class="col-sm-6 col-lg-5 project-info right mobile-left">
+                <h2 class="project-name">Beautiful, predictive<br /> & quick</h2>
+                <p class="description hidden-xs">We think we are on to something when we say<br /> that you are pretty predictive in your behaviour<br /> especially when it comes to food habits.<br />We call it <u>Predictions</u>* and it's pretty awesome<br />since it makes your calorie logging a lot faster.</p>
+                <div class="buttons-container">
+                    <a target="_blank" rel="nofollow" href="https://itunes.apple.com/us/app/nutrif.io/id924999887?mt=8" class="btn btn-black">Download now</a>
+                </div>
+		<p style="font-size:8pt;"><br />*Predictions are accessible within the Search UI and in Notification Center.</p>                     
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="incamp" data-midnight="white">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 col-lg-6 project-info left mobile-right">
+                <h2 class="project-name"><u>Your</u> health app,<br />loaded with<br />calories</h2>
+                <p class="description hidden-xs hidden-768">Calories are securely stored right in to the<br />Health App where no one except you - and you <br />alone, have access* to this data. Not us, not Apple.</p>
+                <p class="description visible-768">Calories are securely stored right in to the<br />Health App where no one except you, and you alone, have access<br />to this data*. Not us, not Apple.</p>
+                <div class="buttons-container">
+                    <a target="_blank" rel="nofollow" href="https://itunes.apple.com/us/app/nutrif.io/id924999887?mt=8" class="btn btn-white">Download now</a>
+                </div>
+		<p class="description hidden-xs hidden-768" style="font-size:8pt;"><br />*Read more about data privacy in our <a href="privacy/" style="color: white;"><u>privacy policy.</u></a></p>
+            </div>   
+            <div class="col-sm-5 col-lg-5 hero-container hidden-xs">
+                <div class="incamp-image"></div>
+            </div>     
+        </div>
+    </div>
+    <div class="incamp-image visible-xs"></div>
+</section>
+
+<section id="smarteq" data-midnight="dark">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 col-lg-7 hero-container">
+                <div class="project-hero hidden-xs"></div>
+                <img class="visible-xs img-responsive" src="assets/images/smarteq-hero-sm.png" />
+            </div>
+            <div class="col-sm-6 col-lg-5 project-info right">
+                <h2 class="project-name">Eat <br />your <br />carrots!</h2>
+                <p class="description hidden-xs">Keeping track of your calories might actually<br />help you loose weight & hopefully gets you<br />feel healtier and hey, <u>who knows</u> what else!?</p>
+                <div class="buttons-container">
+                    <a target="_blank" rel="nofollow" href="https://itunes.apple.com/us/app/nutrif.io/id924999887?mt=8" class="btn btn-black">download now</a>
+                </div>            
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="hoteza_tv" data-midnight="white">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 project-info left mobile-right">
+                <h2 style="color: white;" class="project-name hidden-xs">And yes<br />It works<br />with your<br />apple watch</h2>
+                <h2 style="color: white;" class="project-name visible-xs">And yes<br />It works<br />with your<br />apple watch</h2>
+                <p class="description hidden-xs" style="color: white;"><u>It's free</u>*. So really, what are you waiting for?</p>
+                <div class="buttons-container">
+                    <a target="_blank" rel="nofollow" href="https://itunes.apple.com/us/app/nutrif.io/id924999887?mt=8" class="btn btn-white">download now</a>
+                </div>
+		<p style="font-size:8pt; color: white;"><br />*Nutrif.IO are completely free with no hidden fees or surcharges.</p>            
+            </div>        
+        </div>
+    </div>
+</section>
+
+    
+    <script>
+        $.extend({
+          isMobile: function() {
+            return navigator.userAgent.match(/iPhone|iPad|iPod|Android|Windows Phone|IEMobile/i);
+          }
+        });
+        $(document).ready(function(){
+            console.log($.isMobile());
+            if ($.isMobile() != null) {
+                $("html").addClass("touch");
+            }
+            $("#hoteza_solutions").appear(function() {
+                $("#hoteza_solutions .project-info").addClass("active");
+            });
+            
+            $("#aeroplan").appear(function() {
+                $("#aeroplan .project-info").addClass("active");
+                $("#aeroplan .layer-1").addClass("active");
+                setTimeout(function(){
+                    $("#aeroplan .layer-2").addClass("active");
+                }, 500);
+                setTimeout(function(){
+                    $("#aeroplan .layer-3").addClass("active");
+                }, 1000);
+            }, {accY: -100});
+            
+            $("#spb_tv").appear(function() {
+                $("#spb_tv .project-hero").addClass("active");
+                setTimeout(function() {
+                    $("#spb_tv .project-info").addClass("active");
+                }, 500);
+            }, {accY: -100});
+            
+            $("#phonesoap").appear(function() {
+                $("#phonesoap .project-hero").addClass("active");
+                setTimeout(function() {
+                    $("#phonesoap .project-info").addClass("active");
+                }, 500);
+            }, {accY: -100});
+            
+            $("#incamp").appear(function() {
+                $("#incamp .project-info").addClass("active");
+                setTimeout(function() {
+                    $("#incamp .incamp-image").addClass("active");
+                }, 500);
+            }, {accY: -100});
+            
+            $("#smarteq").appear(function() {
+                $("#smarteq .project-hero").addClass("active");
+                setTimeout(function() {
+                    $("#smarteq .project-info").addClass("active");
+                }, 500);
+            }, {accY: -100});
+            
+            $("#hoteza_tv").appear(function() {
+                $("#hoteza_tv .project-hero").addClass("active");
+                setTimeout(function() {
+                    $("#hoteza_tv .project-info").addClass("active");
+                }, 500);
+            }, {accY: -100});
+        });
+    </script>
+    </body>
 </html>
